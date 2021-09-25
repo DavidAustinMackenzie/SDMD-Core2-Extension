@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAbuDhabi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewAbuDhabi"
+        style="@style/RedBackGround" />
+
+    <TextView
+        android:id="@+id/txtAlbertPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="36dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewAlbertPark"
+        style="@style/BlueBackGround"/>
+
+    <TextView
+        android:id="@+id/txtMonza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="36dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewMonza"
+        style="@style/GreenBackground" />
+
+    <TextView
+        android:id="@+id/txtMonaco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewMonaco"
+        style="@style/WhiteText"/>
+
+    <ImageView
+        android:id="@+id/imgViewMonza"
+        android:layout_width="186dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toEndOf="@+id/imgViewMonaco"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewAlbertPark"
+        app:srcCompat="@drawable/monza" />
+
+    <ImageView
+        android:id="@+id/imgViewMonaco"
+        android:layout_width="182dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewAbuDhabi"
+        app:srcCompat="@drawable/monaco" />
+
+    <ImageView
+        android:id="@+id/imgViewAlbertPark"
+        android:layout_width="190dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@+id/imgViewAbuDhabi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/albert_park" />
+
+    <ImageView
+        android:id="@+id/imgViewAbuDhabi"
+        android:layout_width="183dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abu_dhabi" />
+
+    <TextView
+        android:id="@+id/txtRatingAlbertPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlbertPark" />
+
+    <TextView
+        android:id="@+id/txtRatingAbuDhabi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAbuDhabi" />
+
+    <TextView
+        android:id="@+id/txtRatingMonaco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMonaco" />
+
+    <TextView
+        android:id="@+id/txtRatingMonza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMonza" />
+</androidx.constraintlayout.widget.ConstraintLayout>
