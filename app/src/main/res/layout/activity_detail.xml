@@ -10,52 +10,64 @@
         android:id="@+id/imgViewTrack"
         android:layout_width="409dp"
         android:layout_height="209dp"
+        android:contentDescription="@string/img_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
         app:srcCompat="@drawable/abu_dhabi" />
-
-    <TextView
-        android:id="@+id/txtCountry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgViewTrack"
-        style="@style/RedBackGround"/>
-
-    <TextView
-        android:id="@+id/txtLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCountry"
-        style="@style/GreenBackground" />
-
-    <TextView
-        android:id="@+id/txtDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratTrack"
-        style="@style/BlueBackGround"/>
 
     <RatingBar
         android:id="@+id/ratTrack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLocation"
+        app:layout_constraintTop_toBottomOf="@+id/editLocationLayout"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editCountryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewTrack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCountry"
+            style="@style/WhiteBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_country" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLocationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editCountryLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editLocation"
+            style="@style/WhiteBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_location"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ratTrack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editDate"
+            style="@style/WhiteBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_date"
+            android:inputType="date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

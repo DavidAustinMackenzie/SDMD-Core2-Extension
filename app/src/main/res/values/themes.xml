@@ -25,4 +25,7 @@
     <style name="GreenBackground">
         <item name="android:background">#6B8E23</item>
     </style>
+    <style name="WhiteBackground">
+        <item name="android:background">#FFFFFF</item>
+    </style>
 </resources>
