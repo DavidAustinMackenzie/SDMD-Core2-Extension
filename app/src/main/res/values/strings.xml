@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Core2 Extension My Travel Journal</string>
+    <string name="app_name">Core2 Extension: My Travel Journal</string>
     <string name="hint_country">Please enter a country</string>
     <string name="hint_location">Please enter a location</string>
     <string name="hint_date">Please enter date</string>
